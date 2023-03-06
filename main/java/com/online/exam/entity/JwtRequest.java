@@ -1,0 +1,38 @@
+package com.online.exam.entity;
+
+public class JwtRequest {
+	static String username;
+	String password;
+
+	public JwtRequest() {
+		super();
+	}
+
+	public JwtRequest(String username, String password) {
+		super();
+		this.username = username;
+		this.password = password;
+	}
+
+	public static String getUsername() {
+		return username;
+	}
+
+	public void setUsername(String username) {
+		this.username = username;
+	}
+
+	public String getPassword() {
+		return password;
+	}
+
+	public void setPassword(String password) {
+		this.password = password;
+	}
+
+	@Override
+	public String toString() {
+		return "JwtRequest [username=" + username + ", password=" + password + "]";
+	}
+
+}
